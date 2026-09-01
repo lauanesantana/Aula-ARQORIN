@@ -29,7 +29,12 @@ int buscaSequencial (const Vetor *v, TipoDado chave);
 int buscaSequencialComParada (const Vetor *v, TipoDado chave); 
 
 //busca sequencial com sentinela 
-int buscaSequencialComSentinela (const Vetor *v, TipoDado chave); 
+int buscaSequencialComSentinela ( Vetor *v, TipoDado chave); 
+
+// — versão iterativa, que recebe o vetor e uma chave, e retorna o índice do elemento encontrado ou -1 caso não exista.
+int buscaBinaria ( const Vetor *v, TipoDado chave );
+
+int buscaBinariaRecursiva ( Vetor *v, TipoDado chave, int fim, int meio );
 
 #endif //BUSCA H
 
